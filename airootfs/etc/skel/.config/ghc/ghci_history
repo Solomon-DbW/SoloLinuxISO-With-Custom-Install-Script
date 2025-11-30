@@ -1,0 +1,100 @@
+:q
+:l Coursework.hs 
+:q
+connect 0 5 [(0, 1)]
+connect (0, 5) [(0, 1)]
+:l Coursework.hs 
+:q
+connect 4 0 [(0,1),(0,2),(1,2),(2,3),(2,4),(3,4)]
+:l Coursework.hs 
+:q
+:l Coursework.hs 
+:q
+connect 4 0 [(0,1),(0,2),(1,2),(2,3),(2,4),(3,4)]
+:l Coursework.hs 
+:q
+dialogue Over (findDialogue ["Haskell Curry","William Howard"])
+dialogue Over (findDialogue [])
+:l Coursework.hs 
+:q
+dialogue Over (findDialogue [])
+dialogue (testGame 1) testDialogue
+dialogue (testGame 0) testDialogue
+:l Coursework.hs 
+:q
+dialogue (testGame 0) testDialogue
+:l Coursework.hs 
+:q
+:l Coursework.hs 
+:q
+removeAt 1 ["Brouwer"] g
+addHere ["Poincar"] g
+remove ["Russell"] g
+addHere ["Poincaré"] g
+addAt 1 ["Kripke"] g
+add ["Alice"] g
+let g = testGame 0
+:l Coursework.hs 
+:q
+add ["Alice"] g
+let g = testGame 0
+:q
+":q
+Game [(0,1)] 0 [] [[],["Brouwer","Heyting"]]
+Game [(0,1)] 0 ["Russell"] [[],["Brouwer","Heyting","Kripke"]]
+Game [(0,1)] 0 ["Russell","Alice"] [[],["Brouwer","Heyting"]]
+let g = testGame 0
+let g = testGame 0
+:l Coursework.hs 
+:q
+:l Coursework.hs 
+:q
+disconnect 2 0 [(0,1),(0,2),(1,2),(2,3),(2,4),(3,4),(2,0)]
+:l Coursework.hs 
+disconnect 2 0 [(0,1),(0,2),(1,2),(2,3),(2,4),(3,4),(2,0)]
+:l Coursework.hs 
+disconnect 2 0 [(0,1),(0,2),(1,2),(2,3),(2,4),(3,4),(2,0)]
+disconnect 2 0 [(0,1),(0,2),(1,2),(2,3),(2,4),(3,4)]
+:l Coursework.hs 
+disconnect 2 0 [(0,1),(0,2),(1,2),(2,3),(2,4),(3,4)]
+disconnect 2 0 connect 4 0 [(0,1),(0,2),(1,2),(2,3),(2,4),(3,4)]
+:l Coursework.hs 
+:q
+disconnect 2 0 connect 4 0 [(0,1),(0,2),(1,2),(2,3),(2,4),(3,4)]
+:l Coursework.hs 
+:q
+disconnect 2 0 connect 4 0 [(0,1),(0,2),(1,2),(2,3),(2,4),(3,4)]
+disconnect 2 0 it
+:l Coursework.hs 
+:q
+:l Coursework.hs 
+:q
+disconnect 2 0 it
+connect 4 0 [(0,1),(0,2),(1,2),(2,3),(2,4),(3,4)]
+disconnect 2 0 connect 4 0 [(0,1),(0,2),(1,2),(2,3),(2,4),(3,4)]
+disconnect 2 0 it
+:l Coursework.hs 
+:q
+:l Coursework.hs 
+:q
+:l Coursework.hs 
+:q
+disconnect 2 0 it
+:l Coursework.hs 
+:q
+:l Coursework.hs 
+:q
+disconnect 2 0 it
+connect 4 0 [(0,1),(0,2),(1,2),(2,3),(2,4),(3,4)]
+connected [(0,1),(0,2),(1,2),(2,3),(2,4),(3,4)] 2
+:l Coursework.hs 
+:q
+:l Coursework.hs 
+:q
+walkthrough 
+:l Coursework.hs 
+:q
+walkthrough 
+:l Coursework.hs 
+:l Coursework.hs 
+:l Coursework.hs 

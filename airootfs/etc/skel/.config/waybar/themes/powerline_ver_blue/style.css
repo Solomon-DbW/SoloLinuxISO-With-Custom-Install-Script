@@ -1,0 +1,378 @@
+* {
+    border: none;
+	border-radius: 0;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+	text-shadow: none;
+	icon-shadow: none;
+    font-family: 'JetBrains Mono Nerd Font';
+    font-size: 12px;
+    min-height: 0;
+}
+
+
+window#waybar {
+    background: #678AB9;
+    color: #222222
+    /* border: none; */
+}
+
+/* Remove default styling */
+.modules-left,
+.modules-center,
+.modules-right {
+    background: transparent;
+}
+
+/* Base module styling */
+#custom-launcher,
+#custom-launch_neovim,
+#custom-launch_kitty,
+#custom-launch_brave,
+#custom-launch_emacs,
+#custom-launch_virt_manager,
+#cpu,
+#memory,
+#custom-updates,
+#custom-media,
+#tray,
+#disk,
+#custom-wallpaper,
+#network,
+#backlight,
+#pulseaudio,
+#clock,
+#battery,
+#custom-power {
+    color: #ffffff;
+    padding: 0 12px;
+    margin: 0;
+    border: none;
+}
+
+#custom-launcher {
+    background: #589BCA;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#custom-launch_neovim {
+    background: #478AB9;
+    color: #ffffff;
+}
+
+#custom-launch_kitty {
+    background: #3679A8;
+    color: #ffffff;
+}
+
+#custom-launch_brave {
+    background: #256897;
+    color: #ffffff;
+}
+
+#custom-launch_emacs {
+    background: #145786;
+    color: #ffffff;
+}
+
+#custom-launch_virt_manager {
+    background: #034675;
+    color: #ffffff;
+}
+
+
+#cpu {
+    background: #145786;
+    color: #ffffff;
+}
+
+#memory {
+    background: #256897;
+    color: #ffffff;
+}
+
+#custom-updates {
+    background: #3679A8;
+    color: #ffffff;
+}
+
+#disk {
+    background: #478AB9;
+    color: #ffffff;
+}
+
+#window { /* Workspace name*/
+    background: #589BCA;
+    color: #ffffff;
+}
+
+/* WORKSPACES*/
+#workspaces {
+    background: #698AB9;
+    color: #222222;
+    padding: 0 6px;
+    margin: 0;
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#workspaces button {
+    /* background: #777777; */
+    color: #ffffff;
+    border: none;
+    margin: 0 2px;
+    padding: 0 6px;
+    transition: background 0.3s, color 0.3s;
+    font-family: 'JetBrains Mono Nerd Font';
+}
+
+#workspaces button:hover {
+    background: #589BCA;
+    color: #ffffff;
+}
+
+#workspaces button.active {
+    background: #478AB9;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+#workspaces button.urgent {
+    background: #e74c3c;
+    color: #ffffff;
+}
+
+/* Right modules - Purple/Pink theme */
+/* #custom-wallpaper { */
+/*     background: #9b59b6; */
+/*     color: #ffffff; */
+/* } */
+
+#network {
+    background: #589BCA;
+    color: #ffffff;
+}
+
+#backlight {
+    background: #478AB9;
+    color: #ffffff;
+}
+
+#pulseaudio {
+    background: #3679A8;
+    color: #ffffff;
+}
+
+#clock {
+    background: #256897;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#battery {
+    background: #145786;
+    color: #ffffff;
+}
+
+#custom-power {
+    background: #034675;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Powerline separators styling using proper Unicode characters */
+/* Left section separators - \uE0B0 (forward arrow) */
+#custom-separator1 {
+    color: #589BCA;
+    background: #478AB9;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#custom-separator2 {
+    color: #478AB9;
+    background: #3679A8;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#custom-separator3 {
+    color: #3679A8;
+    background: #256897;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#custom-separator4 {
+    color: #256897;
+    background: #034675;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#custom-separator5 {
+    color: #034675;
+    background: #145786;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+
+#custom-separator7 {
+    color: #145786;
+    background: #256897;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#custom-separator8 {
+    color: #256897;
+    background: #478AB9;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#custom-separator9 {
+    color: #478AB9;
+    background: #589BCA;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#custom-separator10 {
+    color: #589BCA;
+    background: #678AB9;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+/**/
+/* #custom-separator11 { */
+/*     color: #444444; */
+/*     background: #777777; */
+/*     font-size: 20px; */
+/*     padding: 0; */
+/*     margin: 0; */
+/* } */
+
+/* #custom-separator9 { */
+/*     color: #111111; */
+/*     background: #999999; */
+/*     font-size: 20px; */
+/*     padding: 0; */
+/*     margin: 0; */
+/* } */
+
+/* Right section separators - \uE0B2 (backward arrow) */
+#custom-separator13 {
+    color: #478AB9;
+    background: #589BCA;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#custom-separator14 {
+    color: #589BCA;
+    background: transparent;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#custom-separator15 {
+    color: #478AB9;
+    background: #589BCA;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#custom-separator16 {
+    color: #3679A8;
+    background: #478ab9;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#custom-separator17 {
+    color: #256897;
+    background: #3679A8;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#custom-separator18 {
+    color: #145786;
+    background: #256897;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#custom-separator19 {
+    color: #034675;
+    background: #145786;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Special states */
+#battery.warning {
+    background: #f39c12;
+    color: #ffffff;
+}
+
+#battery.critical {
+    background: #e74c3c;
+    color: #ffffff;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    to {
+        background-color: #BF616A;
+        color: #B5E8E0;
+    }
+}
+
+/* Hover effects */
+#custom-launcher:hover,
+#custom-launch_neovim:hover,
+#custom-launch_kitty:hover,
+#custom-launch_brave:hover,
+#custom-launch_emacs:hover,
+#custom-power:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Tooltip styling */
+tooltip {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+tooltip label {
+    color: #ffffff;
+}
+
+

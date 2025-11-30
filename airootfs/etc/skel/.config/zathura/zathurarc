@@ -1,0 +1,5 @@
+set adjust-open "width"
+set zoom-step 100
+set recolor false
+set smooth-scroll true
+

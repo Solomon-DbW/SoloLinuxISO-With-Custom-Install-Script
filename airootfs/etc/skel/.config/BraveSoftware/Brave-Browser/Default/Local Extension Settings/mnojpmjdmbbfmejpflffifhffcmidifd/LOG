@@ -1,0 +1,38 @@
+2025/11/30-19:31:14.818 1f524 Reusing MANIFEST /home/solo/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/mnojpmjdmbbfmejpflffifhffcmidifd/MANIFEST-000001
+2025/11/30-19:31:14.819 1f524 Recovering log #96
+2025/11/30-19:31:14.823 1f524 Reusing old log /home/solo/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/mnojpmjdmbbfmejpflffifhffcmidifd/000096.log 
+2025/11/30-20:30:53.164 1f511 Level-0 table #101: started
+2025/11/30-20:30:53.171 1f511 Level-0 table #101: 264133 bytes OK
+2025/11/30-20:30:53.173 1f511 Delete type=0 #96
+2025/11/30-20:35:22.346 1f511 Level-0 table #103: started
+2025/11/30-20:35:22.354 1f511 Level-0 table #103: 263101 bytes OK
+2025/11/30-20:35:22.356 1f511 Delete type=0 #100
+2025/11/30-20:40:29.534 1f511 Compacting 2@0 + 1@1 files
+2025/11/30-20:40:29.543 1f511 Generated table #104@0: 30 keys, 56093 bytes
+2025/11/30-20:40:29.543 1f511 Compacted 2@0 + 1@1 files => 56093 bytes
+2025/11/30-20:40:29.544 1f511 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/11/30-20:40:29.544 1f511 Delete type=2 #98
+2025/11/30-20:40:29.544 1f511 Delete type=2 #101
+2025/11/30-20:40:29.544 1f511 Delete type=2 #103
+2025/11/30-20:40:34.597 1f50f Level-0 table #106: started
+2025/11/30-20:40:34.603 1f50f Level-0 table #106: 264784 bytes OK
+2025/11/30-20:40:34.605 1f50f Delete type=0 #102
+2025/11/30-20:42:09.690 1f50f Level-0 table #108: started
+2025/11/30-20:42:09.697 1f50f Level-0 table #108: 262391 bytes OK
+2025/11/30-20:42:09.698 1f50f Delete type=0 #105
+2025/11/30-20:48:29.834 1f511 Compacting 2@0 + 1@1 files
+2025/11/30-20:48:29.845 1f511 Generated table #109@0: 46 keys, 58069 bytes
+2025/11/30-20:48:29.845 1f511 Compacted 2@0 + 1@1 files => 58069 bytes
+2025/11/30-20:48:29.846 1f511 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/11/30-20:48:29.846 1f511 Delete type=2 #106
+2025/11/30-20:48:29.846 1f511 Delete type=2 #108
+2025/11/30-20:48:29.847 1f511 Delete type=2 #104
+2025/11/30-21:01:50.288 1f511 Level-0 table #111: started
+2025/11/30-21:01:50.296 1f511 Level-0 table #111: 268032 bytes OK
+2025/11/30-21:01:50.299 1f511 Delete type=0 #107
+2025/11/30-21:16:30.747 1f511 Compacting 1@0 + 1@1 files
+2025/11/30-21:16:30.756 1f511 Generated table #112@0: 58 keys, 60173 bytes
+2025/11/30-21:16:30.756 1f511 Compacted 1@0 + 1@1 files => 60173 bytes
+2025/11/30-21:16:30.757 1f511 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/11/30-21:16:30.757 1f511 Delete type=2 #111
+2025/11/30-21:16:30.757 1f511 Delete type=2 #109

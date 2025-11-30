@@ -1,0 +1,121 @@
+{
+	"layer": "top",
+	"modules-left": ["custom/launcher","cpu","memory", "custom/updates","custom/media","tray"],
+	"modules-center": ["hyprland/workspaces"],
+	"modules-right": ["custom/wallpaper","network", "backlight","pulseaudio","clock", "battery","custom/power"],
+	
+	"pulseaudio": {
+		// "scroll-step": 1, // %, can be a float
+		"format": "{volume}% {icon}  {format_source}",
+		"format-bluetooth": "{volume}% {icon} {format_source}",
+		"format-bluetooth-muted": " {icon} {format_source}",
+		"format-muted": "0%  {format_source}",
+		"format-source": "{volume}% ",
+		"format-source-muted": "",
+		"format-icons": {
+		    "headphone": "",
+		    "hands-free": "",
+		    "headset": "",
+		    "phone": "",
+		    "portable": "",
+		    "car": "",
+		    "default": ["", "", ""]
+		},
+		"on-click": "pavucontrol"
+
+	},
+	
+	    "hyprland/workspaces": {
+		"persistent-workspaces": {
+		    "*": 5
+		},
+		"format": "{name}",
+		"format-icons": {
+		    "active": "󰮯",
+		    "default": "",
+		    "empty": ""
+		},
+		"on-scroll-up": "hyprctl dispatch workspace e+1",
+		"on-scroll-down": "hyprctl dispatch workspace e-1",
+		"all-outputs": true,
+		"sort-by-number": true,
+		"format-active": "{name}",
+		"format-occupied": "{name}",
+		"format-empty": "{name}"
+	    },
+
+	"network": {
+		"tooltip": false,
+		"format-wifi": "  {essid}",
+		"format-ethernet": "",
+		"on-click": "kitty -e nm-connection-editor"
+	},
+	"backlight": {
+		"tooltip": false,
+		"format": " {}%",
+		"interval":1,
+        "on-scroll-up": "light -A 5",
+		"on-scroll-down": "light -U 5"
+	},
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon}  {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+	"tray":{
+		"icon-size":18,
+		"spacing": 10
+	},
+    "clock": {
+        "format": "󰃭 {:%d-%m-%Y |  %H:%M}"  // Updated to show date and time
+    },
+    "cpu": {
+        "interval": 15,
+        "format": " {}%",
+        "max-length": 10
+    },
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+        "max-length": 10,
+	"on-click": "kitty -e htop"
+    },
+    "custom/media": {
+        "interval": 30,
+        "format": "{icon} {}",
+        "return-type": "json",
+        "max-length": 20,
+        "format-icons": {
+            "spotify": " ",
+            "default": " "
+        },
+        "escape": true,
+        "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
+        "on-click": "playerctl play-pause"
+    },
+    "custom/launcher":{
+        "format": "SL",
+        "on-click": "rofi -show drun",
+        "on-click-right": "killall rofi"
+    },
+    "custom/power":{
+        "format": " ",
+        "on-click": "bash ~/.config/waybar/scripts/power.sh",
+    },
+    "custom/updates":{
+        "format": "{} Update(s)",
+        "exec": "checkupdates | wc -l",
+        "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
+        "interval": 15,
+        "on-click": "kitty -e sudo pacman -Syu && notify-send 'The system has been updated' "
+    }
+
+    
+}

@@ -1,0 +1,18 @@
+2025/11/30-17:11:40.681 ed5c Reusing MANIFEST /home/solo/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/11/30-17:11:40.681 ed5c Recovering log #3
+2025/11/30-17:11:40.684 ed5c Reusing old log /home/solo/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000003.log 
+2025/11/30-17:11:53.313 ed5e Level-0 table #5: started
+2025/11/30-17:11:53.333 ed5e Level-0 table #5: 3150900 bytes OK
+2025/11/30-17:11:53.335 ed5e Delete type=0 #3
+2025/11/30-17:14:15.411 ed5e Level-0 table #7: started
+2025/11/30-17:14:15.421 ed5e Level-0 table #7: 1518897 bytes OK
+2025/11/30-17:14:15.422 ed5e Delete type=0 #4
+2025/11/30-17:14:15.423 ed5e Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2025/11/30-17:14:15.423 ed5e Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x10\x00\x00\x05' @ 2779 : 1
+2025/11/30-17:14:15.423 ed5e Compacting 1@1 + 1@2 files
+2025/11/30-17:14:15.429 ed5e Generated table #8@1: 78 keys, 1575 bytes
+2025/11/30-17:14:15.429 ed5e Compacted 1@1 + 1@2 files => 1575 bytes
+2025/11/30-17:14:15.430 ed5e compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/11/30-17:14:15.430 ed5e Delete type=2 #5
+2025/11/30-17:14:15.430 ed5e Delete type=2 #7
+2025/11/30-17:14:15.431 ed5e Manual compaction at level-1 from '\x00\x10\x00\x00\x05' @ 2779 : 1 .. (end); will stop at (end)

@@ -1,0 +1,228 @@
+
+* {
+	border: none;
+    font-family: "JetbrainsMono Nerd Font" ;
+    background-color: #000000;
+	font-size: 15px;
+	min-height: 35px;
+    border-radius: 20px;
+}
+
+window#waybar {
+	background: transparent;
+}
+
+window#waybar.hidden {
+	opacity: 0.2;
+}
+
+#window {
+	margin-top: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: none;
+    color: #ffffff;
+	/* background-color: #00cccc; */
+}
+
+#network {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	/* margin-bottom: 0px; */
+	transition: none;
+	background-color: #666666;
+    color: #000000;
+    margin-bottom: 6px;
+}
+
+#pulseaudio {
+	margin-top: 6px;
+    margin-bottom: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	/* margin-bottom: 0px; */
+	transition: none;
+    color: #000000;
+	background-color: #666666;
+}
+
+#battery {
+	margin-top: 6px;
+    margin-bottom: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	/* margin-bottom: 0px; */
+	transition: none;
+    color: #000000;
+	background-color: #666666;
+}
+
+#battery.charging, #battery.plugged {
+    background-color: #666666;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #66A9CC;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #BF616A;
+        color: #B5E8E0;
+    }
+}
+
+#backlight {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+    color: #000000;
+	/* margin-bottom: 0px; */
+    margin-bottom: 6px;
+	transition: none;
+	background-color: #666666;
+}
+#clock {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	/* margin-bottom: 0px; */
+    color: #000000;
+    margin-bottom: 6px;
+	transition: none;
+	background-color: #666666;
+}
+
+#memory {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	/* margin-bottom: 0px; */
+    margin-bottom: 6px;
+    color: #000000;
+	padding-right: 10px;
+	transition: none;
+	background-color: #666666;
+}
+#cpu {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	/* margin-bottom: 0px; */
+    margin-bottom: 6px;
+    color: #000000;
+	padding-right: 10px;
+	transition: none;
+	background-color: #666666;
+}
+
+#tray {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	/* margin-bottom: 0px; */
+    margin-bottom: 6px;
+    color: #000000;
+	padding-right: 10px;
+	transition: none;
+	background-color: #666666;
+}
+
+#custom-launcher {
+	font-size: 24px;
+	margin-top: 6px;
+	margin-left: 8px;
+    margin-bottom: 6px;
+	padding-left: 10px;
+    color: #000000;
+	padding-right: 5px;
+	transition: none;
+    background-color: #666666;
+}
+
+#custom-power {
+	font-size: 20px;
+	margin-top: 6px;
+	margin-left: 8px;
+    color: #000000;
+	margin-right: 8px;
+	padding-left: 10px;
+	padding-right: 5px;
+	/* margin-bottom: 0px; */
+    margin-bottom: 6px;
+	transition: none;
+	background-color: #666666;
+}
+#custom-launch_brave {
+
+	font-size: 20px;
+	margin-top: 6px;
+	margin-left: 8px;
+    color: #000000;
+	margin-right: 8px;
+	padding-left: 10px;
+	padding-right: 5px;
+	/* margin-bottom: 0px; */
+    margin-bottom: 6px;
+	transition: none;
+	background-color: #666666;
+}
+
+#custom-launch_emacs {
+	font-size: 20px;
+	margin-top: 6px;
+	margin-left: 8px;
+    color: #000000;
+	margin-right: 8px;
+	padding-left: 10px;
+	padding-right: 5px;
+	/* margin-bottom: 0px; */
+    margin-bottom: 6px;
+	transition: none;
+	background-color: #666666;
+}
+
+#custom-wallpaper {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+    color: #000000;
+	padding-right: 10px;
+	/* margin-bottom: 0px; */
+	transition: none;
+	background: #C9CBFF;
+}
+
+#custom-updates {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+    color: #000000;
+	/* margin-bottom: 0px; */
+    margin-bottom: 6px;
+	transition: none;
+	background-color: #666666;
+}
+
+#custom-media {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	/* margin-bottom: 0px; */
+    color: #000000;
+	transition: none;
+	background: #666666;
+}

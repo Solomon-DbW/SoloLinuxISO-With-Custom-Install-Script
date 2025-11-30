@@ -1,0 +1,303 @@
+
+* {
+	border: none;
+    font-family: "JetbrainsMono Nerd Font" ;
+    background-color: transparent;
+	font-size: 15px;
+	min-height: 35px;
+    /* border-radius: 20px; */
+}
+
+window#waybar {
+	background: transparent;
+}
+
+window#waybar.hidden {
+	opacity: 0.2;
+}
+
+#window {
+	margin-top: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+    padding-bottom: 0px;
+	transition: none;
+    color: #ffffff;
+    border-bottom: 2px solid #888888;
+    border-radius: 0px;
+}
+
+#custom-launch_neovim {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: none;
+	background-color: #000000;
+    border: 2px solid #888888;
+    color: #888888;
+    margin-bottom: 6px;
+}
+#custom-launch_kitty {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: none;
+	background-color: #000000;
+    border: 2px solid #888888;
+    color: #888888;
+    margin-bottom: 6px;
+}
+#custom-launch_brave {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: none;
+	background-color: #000000;
+    border: 2px solid #888888;
+    color: #888888;
+    margin-bottom: 6px;
+}
+
+#custom-launch_emacs {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: none;
+	background-color: #000000;
+    border: 2px solid #888888;
+    color: #888888;
+    margin-bottom: 6px;
+}
+
+#workspaces {
+    padding: 0px 9px;
+	background-color: #000000;
+    border: 2px solid #888888;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    color: #ffffff;
+    /* align-items: center; */
+}
+#workspaces button {
+    /* all:unset; */
+    padding: 0px 10px;
+    color: #034675;
+    transition: all .2s ease;
+}
+#workspaces button:hover {
+    color:#00cc00;
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
+}
+#workspaces button.active {
+    color: #2596be;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+#workspaces button.empty {
+    color: #333333;
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
+}
+#workspaces button.empty:hover {
+    color: #999999;
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
+}
+#workspaces button.empty.active {
+    color: #00ff00;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+#disk {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: none;
+	background-color: #000000;
+    border: 2px solid #888888;
+    color: #888888;
+    margin-bottom: 6px;
+}
+
+
+#network {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: none;
+	background-color: #000000;
+    border: 2px solid #888888;
+    color: #888888;
+    margin-bottom: 6px;
+}
+
+#pulseaudio {
+	margin-top: 6px;
+    margin-bottom: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: none;
+	background-color: #000000;
+    border: 2px solid #888888;
+    color: #888888;
+}
+
+#battery {
+	margin-top: 6px;
+    margin-bottom: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: none;
+	background-color: #000000;
+    border: 2px solid #888888;
+    color: #888888;
+}
+
+#battery.charging, #battery.plugged {
+    background-color: #000000;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #66A9CC;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #BF616A;
+        color: #B5E8E0;
+    }
+}
+
+#backlight {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+    margin-bottom: 6px;
+	transition: none;
+	background-color: #000000;
+    border: 2px solid #888888;
+    color: #888888;
+}
+#clock {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+    margin-bottom: 6px;
+	transition: none;
+	background-color: #000000;
+    border: 2px solid #888888;
+    color: #888888;
+}
+
+#memory {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+    margin-bottom: 6px;
+	padding-right: 10px;
+	transition: none;
+	background-color: #000000;
+    border: 2px solid #888888;
+    color: #888888;
+}
+#cpu {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+    margin-bottom: 6px;
+	padding-right: 10px;
+	transition: none;
+	background-color: #000000;
+    border: 2px solid #888888;
+    color: #888888;
+}
+
+#tray {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+    margin-bottom: 6px;
+	padding-right: 10px;
+	transition: none;
+	background-color: #000000;
+    border: 2px solid #888888;
+    color: #888888;
+}
+
+#custom-launcher {
+	font-size: 24px;
+	margin-top: 6px;
+	margin-left: 8px;
+    margin-bottom: 6px;
+	padding-left: 10px;
+	padding-right: 5px;
+	transition: none;
+	background-color: #000000;
+    border: 2px solid #888888;
+    color: #888888;
+}
+
+#custom-power {
+	font-size: 20px;
+	margin-top: 6px;
+	margin-left: 8px;
+	margin-right: 8px;
+	padding-left: 10px;
+	padding-right: 5px;
+    margin-bottom: 6px;
+	transition: none;
+	background-color: #000000;
+    border: 2px solid #888888;
+    color: #888888;
+}
+
+#custom-wallpaper {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+    color: #000000;
+	padding-right: 10px;
+	transition: none;
+	background: #C9CBFF;
+}
+
+#custom-updates {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+    margin-bottom: 6px;
+	transition: none;
+	background-color: #000000;
+    border: 2px solid #888888;
+    color: #888888;
+}
+
+#custom-media {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: none;
+	/* background: #666666; */
+    border: 2px solid #888888;
+    color: #888888;
+}

@@ -1,0 +1,93 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 40,
+    "spacing": 0,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    
+    "modules-left": ["custom/menu", "wlr/taskbar"],
+    "modules-center": [],
+    "modules-right": ["tray", "network", "pulseaudio", "battery", "clock", "custom/power"],
+    
+    "custom/menu": {
+        "format": " ",
+        "on-click": "~/.config/rofi/launchers/type-2/launcher.sh",
+        "tooltip": false
+    },
+    
+    "wlr/taskbar": {
+        "format": "{icon} {title}",
+        "icon-size": 20,
+        "icon-theme": "Papirus",
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "on-click-right": "minimize",
+        "ignore-list": [
+            "Alacritty"
+        ],
+        "app_ids-mapping": {
+            "firefoxdeveloperedition": "firefox-developer-edition"
+        },
+        "all-outputs": true,
+        "active-first": true,
+        "max-length": 25
+    },
+    
+    "tray": {
+        "icon-size": 20,
+        "spacing": 10
+    },
+    
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "⚡ {capacity}%",
+        "format-plugged": "🔌 {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    
+    "network": {
+        "format-wifi": " {essid}",
+        "format-ethernet": "🖧 {ipaddr}/{cidr}",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "format-linked": "🖧 {ifname} (No IP)",
+        "format-disconnected": "⚠ Disconnected",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon}  {volume}%",
+        "format-bluetooth-muted": "🔇 {icon} ",
+        "format-muted": "🔇 Muted",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    
+    "custom/power": {
+        "format": "⏻",
+        "on-click": "~/.config/waybar/scripts/power.sh",
+        "tooltip": false
+    }
+}

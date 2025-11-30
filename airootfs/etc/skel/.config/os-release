@@ -1,0 +1,12 @@
+NAME="SoloLinux"
+PRETTY_NAME="SoloLinux"
+ID=sololinux
+ID_LIKE=arch
+BUILD_ID=rolling
+ANSI_COLOR="0;38;2;37;104;151"
+HOME_URL="https://github.com/Solomon-DbW/SoloLinuxISO"
+DOCUMENTATION_URL="https://github.com/Solomon-DbW/SoloLinuxISO"
+SUPPORT_URL="https://github.com/Solomon-DbW/SoloLinuxISO"
+BUG_REPORT_URL="https://github.com/Solomon-DbW/SoloLinuxISO"
+PRIVACY_POLICY_URL="https://github.com/Solomon-DbW/SoloLinuxISO"
+LOGO=archlinux-logo

@@ -1,0 +1,52 @@
+00:00:00.000930 main     VirtualBox XPCOM Server 7.2.4 r170995 linux.amd64 (Oct 22 2025 16:59:14) release log
+00:00:00.000933 main     Log opened 2025-11-30T21:59:52.102223000Z
+00:00:00.000933 main     Build Type: release
+00:00:00.000935 main     OS Product: Linux
+00:00:00.000935 main     OS Release: 6.17.9-arch1-1
+00:00:00.000936 main     OS Version: #1 SMP PREEMPT_DYNAMIC Mon, 24 Nov 2025 15:21:09 +0000
+00:00:00.000957 main     DMI Product Name: HP 255 15.6 inch G9 Notebook PC
+00:00:00.000967 main     DMI Product Version: Type1ProductConfigId
+00:00:00.000973 main     Firmware type: UEFI
+00:00:00.001165 main     Secure Boot: Disabled
+00:00:00.001216 main     Host RAM: 7238MB (7.0GB) total, 5858MB (5.7GB) available
+00:00:00.001218 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.001218 main     Process ID: 136581
+00:00:00.001219 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.008858 main     IPC socket path: /tmp/.vbox-solo-ipc/ipcd
+00:00:00.013308 DCon01   VirtualBox: object creation starts
+00:00:00.013401 DCon01   Home directory: '/home/solo/.config/VirtualBox'
+00:00:00.013778 DCon01   Loading settings file "/home/solo/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.015531 DCon01   Successfully initialised host USB using sysfs
+00:00:00.029311 DCon01   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlo1: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:00.030434 DCon01   HostDnsMonitor: initializing
+00:00:00.030691 DCon01   NAT: resolv.conf: nameserver 138.38.1.1
+00:00:00.030700 DCon01   NAT: resolv.conf: nameserver 138.38.1.2
+00:00:00.030732 DCon01   HostDnsMonitor: updating information
+00:00:00.030741 DCon01   HostDnsMonitor: old information
+00:00:00.030743 DCon01     no server entries
+00:00:00.030745 DCon01     no domain set
+00:00:00.030747 DCon01     no search string entries
+00:00:00.030749 DCon01   HostDnsMonitor: new information
+00:00:00.030750 DCon01     server 1: 138.38.1.1
+00:00:00.030753 DCon01     server 2: 138.38.1.2
+00:00:00.030754 DCon01     domain: campus.bath.ac.uk
+00:00:00.030756 DCon01     search string 1: campus.bath.ac.uk
+00:00:00.030758 DCon01     search string 2: bath.ac.uk
+00:00:00.032640 DCon01   VD: VDInit finished with VINF_SUCCESS
+00:00:00.032736 DCon01   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={925084b0-625f-422f-a67d-0ede1880a56c} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
+00:00:00.033678 DCon01   Platform architecture set to 'x86'
+00:00:00.034424 DCon01   Loading settings file "/home/solo/VirtualBox VMs/s/s.vbox" with version "1.19-linux"
+00:00:00.034592 DCon01   Platform architecture set to 'x86'
+00:00:00.035214 DCon01   VirtualBox: object created
+00:00:00.708057 DCon04   Saving settings file "/home/solo/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.709758 DCon04   Finished saving settings file "/home/solo/.config/VirtualBox/VirtualBox.xml"
+00:00:00.804355 DCon03   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={5bfd8965-b81b-469f-8649-f717ce97a5d5} aComponent={NvramStoreWrap} aText={The UEFI NVRAM file is not existing for this machine}, preserve=false aResultDetail=0
+00:00:00.951232 DCon03   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={e36a5081-a82a-40bd-9e4e-42a44d6ce50f} aComponent={MachineWrap} aText={The machine is not mutable, saved or running (state is PoweredOff)}, preserve=false aResultDetail=0
+00:00:01.075888 DCon03   Saving settings file "/home/solo/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:01.080712 DCon03   Finished saving settings file "/home/solo/.config/VirtualBox/VirtualBox.xml"
+00:00:16.118843 main     VirtualBox: object deletion starts
+00:00:16.118952 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={7d510820-a678-4730-a862-818dcd3fbed0} aComponent={MediumWrap} aText={Medium '/home/solo/VirtualBox VMs/s/s.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:00:16.119872 main     HostDnsMonitor: shutting down ...
+00:00:16.120585 main     HostDnsMonitor: shut down
+00:00:16.132160 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={2ce10519-3c09-45d8-a12d-e887786146b7} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:00:16.132274 main     VirtualBox: object deleted
