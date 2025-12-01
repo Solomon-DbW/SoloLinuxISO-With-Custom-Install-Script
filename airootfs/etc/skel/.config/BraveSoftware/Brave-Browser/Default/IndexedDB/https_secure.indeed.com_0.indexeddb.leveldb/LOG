@@ -1,6 +1,0 @@
-2025/11/30-20:29:37.890 1f511 Creating DB /home/solo/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_secure.indeed.com_0.indexeddb.leveldb since it was missing.
-2025/11/30-20:29:37.895 1f511 Reusing MANIFEST /home/solo/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_secure.indeed.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/11/30-20:30:07.572 1f511 Level-0 table #5: started
-2025/11/30-20:30:07.573 1f511 Level-0 table #5: 1043 bytes OK
-2025/11/30-20:30:07.576 1f511 Delete type=0 #3
-2025/11/30-20:30:07.576 1f511 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
