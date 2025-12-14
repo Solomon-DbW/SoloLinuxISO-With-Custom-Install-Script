@@ -20,7 +20,7 @@ The SoloLinux project, a Linux operating system based on Arch Linux.
 ### Installing SoloLinux
 1. Reboot your computer and boot into the USB drive using your computer's boot menu.
 2. Boot into the SoloLinux Install Medium (x86/64).
-3. Run `./auto_install.sh` to begin the installation process and follow the instructions in the installer.
+3. Run `./install_sl.sh` to begin the installation process and follow the instructions in the installer.
 4. After the installation script finishes, reboot into your new SoloLinux system
 5. Log in to your SoloLinux system and run `solo_gui_setup.sh` to install the SoloLinux Graphical User Interface
 6. Reboot your computer one last time and enjoy SoloLinux!
